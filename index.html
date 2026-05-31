@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Calming Intervention Prototype</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<div class="phone">
+
+<!-- SETTINGS -->
+<div class="settings-screen" id="settingsScreen">
+
+    <h2>Calming Settings</h2>
+
+    <label>Intervention Frequency</label>
+    <select id="frequency">
+        <option value="20000">Low</option>
+        <option value="12000">Medium</option>
+        <option value="7000">High</option>
+    </select>
+
+    <label>Intervention Type</label>
+    <select id="videoType">
+        <option value="interventions/ocean.mp4">Ocean</option>
+        <option value="interventions/birds.mp4">Rain</option>
+        <option value="interventions/nature.mp4">Nature</option>
+    </select>
+
+    <button id="startBtn">Start Prototype</button>
+
+</div>
+
+<!-- FEED -->
+<div class="feed hidden" id="feed">
+
+    <button id="soundBtn" class="sound-btn">🔇 Sound Off</button>
+
+    <video class="feed-video" src="videos/video1.mp4" muted loop playsinline></video>
+    <video class="feed-video" src="videos/video2.mp4" muted loop playsinline></video>
+    <video class="feed-video" src="videos/video3.mp4" muted loop playsinline></video>
+    <video class="feed-video" src="videos/video4.mp4" muted loop playsinline></video>
+    <video class="feed-video" src="videos/video5.mp4" muted loop playsinline></video>
+    <video class="feed-video" src="videos/video6.mp4" muted loop playsinline></video>
+    <video class="feed-video" src="videos/video7.mp4" muted loop playsinline></video>
+    <video class="feed-video" src="videos/video8.mp4" muted loop playsinline></video>
+
+    <!-- Duplicate Videos 1-8 -->
+<video class="feed-video" src="videos/video1.mp4" muted loop playsinline></video>
+<video class="feed-video" src="videos/video2.mp4" muted loop playsinline></video>
+<video class="feed-video" src="videos/video3.mp4" muted loop playsinline></video>
+<video class="feed-video" src="videos/video4.mp4" muted loop playsinline></video>
+<video class="feed-video" src="videos/video5.mp4" muted loop playsinline></video>
+<video class="feed-video" src="videos/video6.mp4" muted loop playsinline></video>
+<video class="feed-video" src="videos/video7.mp4" muted loop playsinline></video>
+<video class="feed-video" src="videos/video8.mp4" muted loop playsinline></video>
+
+<!-- Duplicate Videos 1-8 -->
+<video class="feed-video" src="videos/video1.mp4" muted loop playsinline></video>
+<video class="feed-video" src="videos/video2.mp4" muted loop playsinline></video>
+<video class="feed-video" src="videos/video3.mp4" muted loop playsinline></video>
+<video class="feed-video" src="videos/video4.mp4" muted loop playsinline></video>
+<video class="feed-video" src="videos/video5.mp4" muted loop playsinline></video>
+<video class="feed-video" src="videos/video6.mp4" muted loop playsinline></video>
+<video class="feed-video" src="videos/video7.mp4" muted loop playsinline></video>
+<video class="feed-video" src="videos/video8.mp4" muted loop playsinline></video>
+
+<!-- Duplicate Videos 1-8 -->
+<video class="feed-video" src="videos/video1.mp4" muted loop playsinline></video>
+<video class="feed-video" src="videos/video2.mp4" muted loop playsinline></video>
+<video class="feed-video" src="videos/video3.mp4" muted loop playsinline></video>
+<video class="feed-video" src="videos/video4.mp4" muted loop playsinline></video>
+<video class="feed-video" src="videos/video5.mp4" muted loop playsinline></video>
+<video class="feed-video" src="videos/video6.mp4" muted loop playsinline></video>
+<video class="feed-video" src="videos/video7.mp4" muted loop playsinline></video>
+<video class="feed-video" src="videos/video8.mp4" muted loop playsinline></video>
+
+</div>
+
+<!-- INTERVENTION -->
+<div class="break-screen hidden" id="breakScreen">
+
+    <video id="calmVideo" muted playsinline></video>
+
+    <div class="overlay">
+
+        <h2>Pause & Reset</h2>
+
+        <div class="timer-circle">
+            <p id="countdown">30</p>
+        </div>
+
+        <p class="message">Take a moment to relax and refocus.</p>
+
+    </div>
+
+</div>
+
+<!-- HOME -->
+<div class="home-screen hidden" id="homeScreen">
+  <img src="images/home.png" class="home-image" />
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

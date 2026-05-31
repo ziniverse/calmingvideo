@@ -1,0 +1,172 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: black;
+}
+.phone {
+    width: 100vw;
+    height: 100dvh;
+    overflow: hidden;
+    position: relative;
+    background: black;
+}
+
+/* SETTINGS */
+.settings-screen {
+position: absolute;
+inset: 0;
+background: rgba(0,0,0,0.95);
+color: white;
+z-index: 20;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+padding: 30px;
+}
+
+.settings-screen h2 {
+text-align: center;
+margin-bottom: 30px;
+}
+
+.settings-screen label {
+margin-top: 15px;
+margin-bottom: 8px;
+}
+
+.settings-screen select,
+.settings-screen button {
+padding: 12px;
+border-radius: 10px;
+border: none;
+}
+
+.settings-screen button {
+margin-top: 25px;
+background: #2563eb;
+color: white;
+font-weight: bold;
+cursor: pointer;
+}
+
+/* FEED */
+.feed {
+    height: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.feed::-webkit-scrollbar {
+    display: none;
+}
+
+.feed-video,
+.break-screen video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scroll-snap-align: start;
+}
+
+/* SOUND BUTTON */
+.sound-btn {
+position: absolute;
+bottom: 20px;
+right: 20px;
+z-index: 100;
+padding: 10px 12px;
+border-radius: 12px;
+border: none;
+background: rgba(255,255,255,0.9);
+cursor: pointer;
+}
+
+/* INTERVENTION */
+.break-screen {
+position: absolute;
+inset: 0;
+z-index: 15;
+}
+
+.break-screen video {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.overlay {
+position: absolute;
+inset: 0;
+background: rgba(0,0,0,0.45);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: white;
+}
+
+.timer-circle {
+width: 180px;
+height: 180px;
+border: 5px solid white;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.timer-circle p {
+font-size: 64px;
+font-weight: bold;
+}
+
+/* HOME */
+.home-screen {
+width: 100%;
+height: 100%;
+background: linear-gradient(180deg,#60a5fa,#4f46e5);
+}
+
+.status-bar {
+display: flex;
+justify-content: space-between;
+padding: 18px;
+color: white;
+}
+
+.app-grid {
+padding: 30px;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+gap: 20px;
+}
+
+.app {
+width: 65px;
+height: 65px;
+border-radius: 18px;
+background: rgba(255,255,255,0.25);
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 28px;
+}
+
+/* UTIL */
+.hidden {
+display: none;
+}
